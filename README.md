@@ -1,24 +1,66 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column     | Type   | Options     |
+| --------   | ------ | ----------- |
+| name       | string | null: false |
+| email      | string | null: false |
+| password   | string | null: false |
 
-* Ruby version
+### Association
+- has_many : alists
+- has_many : comments
+- has_many : likes
+- has_one  : mypage
 
-* System dependencies
+## alists テーブル
 
-* Configuration
+| Column   | Type       | Options                        |
+| ------   | ---------- | ------------------------------ |
+| caption  | text       | null: false                    |
+| user     | references | null: false, foreign_key: true |
 
-* Database creation
+### Association
+- has_many   : comments
+- belongs_to : user
+- has_many   : likes
 
-* Database initialization
 
-* How to run the test suite
+## comments テーブル
 
-* Services (job queues, cache servers, search engines, etc.)
+| Column     | Type         | Options                        |
+| ---------- | ------------ | ------------------------------ |
+| text       | text         | null: false                    |
+| user       | references   | null: false, foreign_key: true |
+| alist      | references   | null: false, foreign_key: true |
 
-* Deployment instructions
+### Association
+- belongs_to : user
+- belongs_to : alist
 
-* ...
+
+## likes テーブル
+
+| Column   | Type       | Options                        |
+| ------   | ---------- | ------------------------------ |
+| user     | references | null: false, foreign_key: true |
+| alist    | references | null: false, foreign_key: true |
+
+### Association
+- belongs_to : user
+- belongs_to : alist
+
+## mypage テーブル
+
+| Column   | Type       | Options                        |
+| ------   | ---------- | ------------------------------ |
+| user     | references | null: false, foreign_key: true |
+| list1    | string     | null: false                    |
+| list2    | string     | null: false                    |
+| list3    | string     | null: false                    |
+| movie    | string     | null: false                    |
+
+### Association
+
+- belongs_to : user
