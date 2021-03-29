@@ -1,0 +1,13 @@
+
+<div class="card">
+    <div class="card__list">
+    <%= link_to alist.list1, alist_path(alist), class: :card__text %>
+    </div>
+    <div class="card__list">
+        <%= link_to alist.list2, alist_path(alist), class: :card__text %> 
+    </div>
+    <div class="card__list">
+    <%= link_to alist.list3, alist_path(alist), class: :card__text %>
+    </div>
+    <%#= link_to "by #{alist.user.name}", user_path(alist.user), class: :card__user %>
+</div>
