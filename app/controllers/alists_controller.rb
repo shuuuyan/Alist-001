@@ -1,6 +1,6 @@
 class AlistsController < ApplicationController
 
-  # before_action :set_alist, except: [:index, :new, :create]
+  before_action :set_alist, except: [:index, :new, :create]
 
   def index
     @alists = Alist.all
@@ -16,9 +16,13 @@ class AlistsController < ApplicationController
       redirect_to root_path
     else
     render :new
-      
     end
   end
+
+  def show
+    # @alist = Alist.new
+  end
+
 
   private
   
@@ -26,8 +30,8 @@ class AlistsController < ApplicationController
     params.require(:alist).permit(:list1, :list2, :list3).merge(user_id: current_user.id)
   end
 
-  # def set_alist
-  #   @alist = Alist.find(params[:id])
-  # end
+  def set_alist
+    @alist = Alist.find(params[:id])
+  end
 end
 

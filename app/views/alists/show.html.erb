@@ -1,0 +1,37 @@
+<main class="main">
+  <div class="inner3">
+    <div class="alist__wrapper">
+      <%= link_to @alist.user.name, root_path, class: :alist__user %>
+
+      <div class="alist__field">
+    
+        <div class="alist__card">
+          <div class="alist__card__list">
+            <div class="alist__card__text">
+              <%= @alist.list1 %>
+            </div>
+          </div>
+          <div class="alist__card__list">
+            <div class="alist__card__text">
+              <%= @alist.list2 %> 
+            </div>
+          </div>
+          <div class="alist__card__list">
+            <div class="alist__card__text">
+              <%= @alist.list3 %> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <%# プロトタイプの投稿者とログインしているユーザーが同じであれば以下を表示する %>
+        <% if current_user.id == @alist.user %>
+          <div class="alist__manage">
+            <%= link_to "編集する", edit_alist_path(@alist), class: :alist__btn %>
+            <%= link_to "削除する", alist_path(@alist), method: :delete, class: :alist__btn %>
+          </div>
+        <% end %>
+      <%# // プロトタイプの投稿者とログインしているユーザーが同じであれば上記を表示する %>
+      
+    </div>
+  </div>
+</main>

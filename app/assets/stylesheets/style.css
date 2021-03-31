@@ -95,7 +95,7 @@ body{
   flex-direction: column;
   align-items: center;
   padding: 20x 20px;
-  margin: 20px 0px 0px;
+  margin: 20px 0px 20px;
   background-color: ghostwhite;
 }
 
@@ -109,10 +109,10 @@ body{
 }
 
 .card {
-  width: calc((100% - 50px) / 4);
-  margin-bottom: 40px;
+  width: calc(90% /4);
+  margin: 0 10px 40px;
   padding: 10px 10px 100px;
-  background-color: gainsboro;
+  background-color: rgb(230, 230, 230);
   text-align: center;
 }
 .card__list {
@@ -127,10 +127,12 @@ body{
   text-align: center;
 }
 .card__text{
-  width: 80%;
+  width: 100%;
+  padding: 10px 0px;
   text-align: center;
   text-decoration: none;
   color: grey;
+  font-size: 10px;
 }
 
 /* フォーム周り */
@@ -195,7 +197,75 @@ body{
   font-size: 10px;
 }
 
-/* 投稿ページ */
-
-
-
+/* 詳細ページ */
+.alist__wrapper{
+  width: 100%;
+}
+.alist__field {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.alist__card {
+  width: 100%;
+  padding: 20px 30px 70px;
+  margin: 0 220px;
+  background-color: rgb(230, 230, 230);
+}
+.alist__card__list {
+  width: 100%;
+  display: block;
+  margin-bottom: 40px;
+  font-weight: bold;
+  background-color: whitesmoke;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  transition: 0.2s ease;
+  text-align: center;
+}
+.alist__card__text{
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  text-decoration: none;
+  color: grey;
+  font-size: 10px;
+}
+.alist__hedding{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.alist__manage{
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+.alist__user{
+  display: block;
+  font-size: 16px;
+  color: #999;
+  text-align: center;
+  text-decoration: underline;
+}
+.alist__manage{
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+.alist__btn{
+  display: block;
+  padding: 0.4em 1.6em;
+  font-size: 0.4em;
+  color: #999;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #999 solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  margin: 0 4px;
+}
+.alist__btn:hover{
+  color: #fff;
+  background: #999;
+}
