@@ -56,7 +56,9 @@ Alist
 
 | Column   | Type       | Options                        |
 | ------   | ---------- | ------------------------------ |
-| caption  | text       | null: false                    |
+| list1    | string     | null: false                    |
+| list2    | string     | null: false                    |
+| list3    | string     | null: false                    |
 | user     | references | null: false, foreign_key: true |
 
 ### Association
@@ -94,9 +96,9 @@ Alist
 | Column   | Type       | Options                        |
 | ------   | ---------- | ------------------------------ |
 | user     | references | null: false, foreign_key: true |
-| list1    | string     | null: false                    |
-| list2    | string     | null: false                    |
-| list3    | string     | null: false                    |
+| menu1    | string     | null: false                    |
+| menu2    | string     | null: false                    |
+| menu3    | string     | null: false                    |
 | movie    | string     | null: false                    |
 
 ### Association

@@ -1,0 +1,19 @@
+
+<div class="card">
+    <div class="card__list">
+      <div class="card__text">
+        <%= alist.list1 %>
+      </div>
+    </div>
+    <div class="card__list">
+      <div class="card__text">
+        <%= alist.list2 %> 
+      </div>
+    </div>
+    <div class="card__list">
+      <div class="card__text">
+       <%= alist.list3 %> 
+      </div>
+    </div>
+    <%= link_to alist.user.name, alist_path(alist.user), class: :card__user %>
+</div>
