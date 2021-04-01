@@ -22,7 +22,25 @@ class AlistsController < ApplicationController
   end
 
   def show
-    # @alist = Alist.new
+  end
+
+  def edit
+  end
+
+  def update
+    if @alist.update(alist_params)
+       redirect_to alist_path(@alist)
+    else 
+      render :edit
+    end
+  end
+
+  def destroy
+    if @alist.destroy
+      redirect_to root_path
+    else
+      redirect_to root_path
+    end
   end
 
   def edit

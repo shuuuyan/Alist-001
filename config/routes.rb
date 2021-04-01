@@ -4,6 +4,5 @@ Rails.application.routes.draw do
   get 'alists/index'
   root to: "alists#index"
   resources :alists 
-  resources :users, only: :show
 end
 
