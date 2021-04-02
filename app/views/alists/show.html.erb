@@ -23,15 +23,34 @@
           </div>
         </div>
       </div>
-      <%# Alistの投稿者とログインしているユーザーが同じであれば以下を表示する %>
         <% if current_user.id == @alist.user_id %>
           <div class="alist__manage">
             <%= link_to "編集する", edit_alist_path(@alist), class: :alist__btn %>
             <%= link_to "削除する", alist_path(@alist), method: :delete, class: :alist__btn %>
           </div>
         <% end %>
-      <%# // Alistの投稿者とログインしているユーザーが同じであれば上記を表示する %>
-      
     </div>
+      <div class="alist__comments">
+        <% if user_signed_in? %>
+          <%= form_with model: [@alist,@comment], local: true do |f| %>
+          <div style="display:inline-flex">
+            <div class="comment__field">
+              <%= f.text_field :text, placeholder: "コメントする" %>
+            </div>
+            <div class="comment__actions">
+              <%= f.submit "送信", class: :comment__btn %>
+            </div>
+          </div>
+          <% end %> 
+        <% end %>
+        <ul class="comments_lists">
+          <% @comments.each do |comment| %>
+            <li class="comments_list">
+              <%= comment.text %>
+              <%= link_to "（#{comment.user.name}）", root_path, class: :comment_user %>
+            </li> 
+          <% end %>
+        </ul>
+      </div>
   </div>
 </main>

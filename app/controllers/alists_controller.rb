@@ -22,6 +22,8 @@ class AlistsController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = @alist.comments
   end
 
   def edit
