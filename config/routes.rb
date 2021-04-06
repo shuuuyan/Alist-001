@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   resources :alists do
     resources :comments, only: :create
   end
+  resources :users, only: :show
 end
 
