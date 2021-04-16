@@ -79,4 +79,3 @@ class AlistsController < ApplicationController
     redirect_to root_path unless current_user == @alist.user
   end
 end
-
