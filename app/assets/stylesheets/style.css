@@ -279,14 +279,18 @@ body{
   margin: 28px 0 40px 0;
 }
 .comments_lists{
-  padding: 20px 0 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0px 5px 5px 0px rgba(0, 0, 0, 0.12);
 }
 .comments_list{
   list-style-type: square;
-  padding-bottom: 5px;
+  padding: 0 5px;
+  background-color: white;
+  list-style: none;
 }
 .comment__field{
   width: 100%;
+  margin-bottom: 20px;
   text-align: center;
 }
 .comment__actions{
@@ -303,4 +307,7 @@ body{
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   transition: 0.2s ease;
 }
-
+.comment_user{
+  text-decoration: none;
+  color: orange;                                    
+}
