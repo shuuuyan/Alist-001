@@ -53,6 +53,10 @@ img {
   border-radius: 30px;
   transition: 0.4s ease;
 }
+.nav__btn:hover{
+  color: #ef9e24;
+  background-color: white;
+}
 
 .nav__logout{
   display: inline-block;
@@ -210,7 +214,7 @@ body{
 .alist__card {
   width: 100%;
   padding: 20px 30px 70px;
-  margin: 0 220px;
+  margin: 0 300px;
   background-color: rgb(230, 230, 230);
 }
 .alist__card__list {
@@ -272,7 +276,7 @@ body{
 
 /* 詳細ページコメント */
 .alist__comments{
-  width: 100%;
+  width: 80%;
   background-color: rgb(250, 244, 234);
   padding: 20px;
   margin: 28px 0 40px 0;
@@ -300,11 +304,21 @@ body{
   margin-left:3px;
   font-size: 0.7em;
   color: #fff;
+
+  background: #5aa1f3;
+  border: 1px #5aa1f3 solid;
+
   background: #569ff3;
   border: 1px #569ff3 solid;
+
   border-radius: 3px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   transition: 0.2s ease;
+}
+
+.comment__btn:hover{
+  color: white;
+  background-color: #2672c9;
 }
 
 
@@ -312,6 +326,7 @@ body{
   color: #fff;
   background: #0b5cb8;
 }
+
 
 
 .comment_user{
