@@ -1,7 +1,7 @@
 <main class="main">
   <div class="inner3">
     <div class="alist__wrapper">
-      <%= link_to @alist.user.name, alist_path(@alist), class: :alist__user %>
+      <%= link_to @alist.user.name, user_path(@alist.user), class: :alist__user %>
 
       <div class="alist__field">
     
@@ -47,7 +47,7 @@
           <% @comments.each do |comment| %>
             <li class="comments_list">
               <%= comment.text %>
-              <%= link_to "（#{comment.user.name}）", root_path, class: :comment_user %>
+              <%= link_to "（#{comment.user.name}）", user_path, class: :comment_user %>
             </li> 
           <% end %>
         </ul>
