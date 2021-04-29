@@ -1,9 +1,12 @@
 <%= form_with model: alist, local: true do |f|%>
   <div class="field">
-    <%= f.text_field :list1, id:"alist_list1", placeholder: "list1", autocomplete: "list1", class: :form__text %>
+    <%= f.text_field :title, id:"alist_title", placeholder: "タイトルを入力", autocomplete: "title", class: :form__text %>
   </div>
   <div class="field">
-    <%= f.text_field :list2, id:"alist_list2", placeholder: "list2", autocomplete: "list2", class: :form__text %>
+    <%= f.text_field :list1, id:"alist_list1", placeholder: "ToDoリスト1", autocomplete: "list1", class: :form__text %>
+  </div>
+  <div class="field">
+    <%= f.text_field :list2, id:"alist_list2", placeholder: "リスト1", autocomplete: "list2", class: :form__text %>
   </div>
   <div class="field">
     <%= f.text_field :list3, id:"alist_list3", placeholder: "list3", autocomplete: "list3", class: :form__text %>

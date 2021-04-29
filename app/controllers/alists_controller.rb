@@ -46,7 +46,6 @@ class AlistsController < ApplicationController
   end
 
   def edit
-    # @alist = Alist.find(params[:id])
   end
 
   def update
