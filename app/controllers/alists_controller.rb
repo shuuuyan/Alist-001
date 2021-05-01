@@ -68,7 +68,7 @@ class AlistsController < ApplicationController
   private
   
   def alist_params
-    params.require(:alist).permit(:list1, :list2, :list3).merge(user_id: current_user.id)
+    params.require(:alist).permit(:title, :list1, :list2, :list3).merge(user_id: current_user.id)
   end
 
   def set_alist
