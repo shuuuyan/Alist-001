@@ -1,19 +1,25 @@
-
 <div class="card">
-    <div class="card__list">
-      <div class="card__text">
-        <%= alist.list1 %>
-      </div>
+  <div class="card__title">
+    <div class="card__title__text">
+      <%= alist.title %>
     </div>
-    <div class="card__list">
-      <div class="card__text">
-        <%= alist.list2 %> 
-      </div>
+  </div>
+  <div class="contributor">
+  投稿者 : <%= link_to alist.user.name, alist_path(alist.id), class: :card__user %>
+  </div>
+  <div class="card__list">
+    <div class="card__list__text">
+      <%= alist.list1 %>
     </div>
-    <div class="card__list">
-      <div class="card__text">
-       <%= alist.list3 %> 
-      </div>
+  </div>
+  <div class="card__list">
+    <div class="card__list__text">
+      <%= alist.list2 %> 
     </div>
-    <%= link_to alist.user.name, alist_path(alist.id), class: :card__user %>
+  </div>
+  <div class="card__list">
+    <div class="card__list__text">
+    <%= alist.list3 %> 
+    </div>
+  </div>
 </div>

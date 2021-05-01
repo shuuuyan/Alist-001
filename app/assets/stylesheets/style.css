@@ -115,9 +115,28 @@ body{
 .card {
   width: calc(90% /4);
   margin: 0 10px 40px;
-  padding: 10px 10px 100px;
+  padding: 10px;
   background-color: rgb(230, 230, 230);
   text-align: center;
+}
+.card__title{
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.card__title__text{
+  width: 100%;
+  padding: 10px 0px;
+  text-decoration: none;
+  text-align: left;
+  color: grey;
+  font-size: 10px;
+}
+.contributor{
+  width: 100px;
+  padding: 10px 0px;
+  font-size: 10px;
+  text-align: left;
 }
 .card__list {
   width: 100%;
@@ -130,13 +149,18 @@ body{
   transition: 0.2s ease;
   text-align: center;
 }
-.card__text{
+.card__list__text{
   width: 100%;
   padding: 10px 0px;
   text-align: center;
   text-decoration: none;
   color: grey;
   font-size: 10px;
+}
+.card__user{
+  width: 100px;
+  color: grey;
+  text-decoration: none;
 }
 
 /* フォーム周り */
