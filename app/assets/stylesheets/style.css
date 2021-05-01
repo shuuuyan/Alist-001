@@ -192,12 +192,12 @@ body{
   width: 100%;
   position: absolute;
   bottom: 0;
-  background-color: #999;
+  background-color: ghostwhite;
   padding: 10px 0;
 }
 .copyright {
   text-align: center;
-  color: #fff;
+  color: grey;
   font-size: 10px;
 }
 
