@@ -56,6 +56,7 @@ Alist
 
 | Column   | Type       | Options                        |
 | ------   | ---------- | ------------------------------ |
+| title    | string     | null: false                    |
 | list1    | string     | null: false                    |
 | list2    | string     | null: false                    |
 | list3    | string     | null: false                    |
