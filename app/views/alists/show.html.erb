@@ -6,9 +6,9 @@
       <div class="alist__field">
         <div class="alist__card">
           <% if current_user.liked_by?(@alist.id) %>
-            <td><%= link_to 'いいねを外す', destroy_like_path(@alist), method: :DELETE %></td>
+            <td><%= link_to 'いいねを外す', destroy_like_path(@alist), method: :DELETE %><%= @alist.likes.count %></td>
           <% else %>
-            <td><%= link_to 'いいね', create_like_path(@alist), method: :POST %></td>
+            <td><%= link_to 'いいねをする', create_like_path(@alist), method: :POST %><%= @alist.likes.count %></td>
           <% end %>
           <div class="alist__card__list">
             <div class="alist__card__text">
