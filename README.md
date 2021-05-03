@@ -13,7 +13,7 @@ Alist
 - 20代総人口          : 約1269万人 
 - 20代instagram利用者 : 約600万(約50%)                                     
 ## 100人アンケート
-(対象20代)
+(20代対象)
 - 実際に朝活はしているか？   : はい(21%) / いいえ（79%）
 - 朝活はした方が良いか？    : はい(83%) / しなくても良い(17%)
 - →およそ62％人に需要あり (約360万人)
@@ -56,6 +56,7 @@ Alist
 
 | Column   | Type       | Options                        |
 | ------   | ---------- | ------------------------------ |
+| title    | string     | null: false                    |
 | list1    | string     | null: false                    |
 | list2    | string     | null: false                    |
 | list3    | string     | null: false                    |

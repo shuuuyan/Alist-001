@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_01_073125) do
+ActiveRecord::Schema.define(version: 2021_05_03_085752) do
 
   create_table "alists", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "list1", null: false
@@ -33,6 +33,15 @@ ActiveRecord::Schema.define(version: 2021_05_01_073125) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
+  create_table "likes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "alist_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["alist_id"], name: "index_likes_on_alist_id"
+    t.index ["user_id"], name: "index_likes_on_user_id"
+  end
+
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -49,4 +58,6 @@ ActiveRecord::Schema.define(version: 2021_05_01_073125) do
   add_foreign_key "alists", "users"
   add_foreign_key "comments", "alists"
   add_foreign_key "comments", "users"
+  add_foreign_key "likes", "alists"
+  add_foreign_key "likes", "users"
 end

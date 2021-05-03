@@ -4,8 +4,12 @@
       <%= link_to @alist.user.name, user_path(@alist.user), class: :alist__user %>
 
       <div class="alist__field">
-        タイトルの入力
         <div class="alist__card">
+          <% if current_user.liked_by?(@alist.id) %>
+            <td><%= link_to 'いいねを外す', destroy_like_path(@alist), method: :DELETE %></td>
+          <% else %>
+            <td><%= link_to 'いいね', create_like_path(@alist), method: :POST %></td>
+          <% end %>
           <div class="alist__card__list">
             <div class="alist__card__text">
               <%= @alist.list1 %>
