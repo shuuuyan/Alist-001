@@ -121,7 +121,6 @@ body{
 }
 .card__title{
   width: 100%;
-  margin-bottom: 20px;
   font-weight: bold;
 }
 .card__title__text{
