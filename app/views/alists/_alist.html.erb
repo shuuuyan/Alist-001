@@ -7,6 +7,17 @@
   <div class="contributor">
   投稿者 : <%= link_to alist.user.name, alist_path(alist.id), class: :card__user %>
   </div>
+  <tbody>
+    <div class="like_btn">
+
+        <% if current_user.liked_by?(alist.id) %>
+          <td><%= link_to 'いいねを外す', destroy_like_path(alist), method: :DELETE, remote: true %><%= alist.likes.count %></td>
+        <% else %>
+          <td><%= link_to 'いいねをする', create_like_path(alist), method: :POST, remote: true %><%= alist.likes.count %></td>
+        <% end %>
+
+    </div>
+  </tbody>
   <div class="card__list">
     <div class="card__list__text">
       <%= alist.list1 %>
