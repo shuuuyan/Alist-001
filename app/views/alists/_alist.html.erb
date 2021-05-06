@@ -10,9 +10,19 @@
   <tbody>
     <div class="like_btn">
         <% if current_user.liked_by?(alist.id) %>
-          <td><%= link_to 'いいねを外す', destroy_like_path(alist), method: :DELETE, remote: true %><%= alist.likes.count %></td>
+          <td>
+            <%= link_to destroy_like_path(alist), class: "like-link", method: :DELETE, remote: true do %>
+              <i class="fas fa-sun unlike-btn"></i>
+            <% end %>
+            <%= alist.likes.count %>
+          </td>
         <% else %>
-          <td><%= link_to 'いいねをする', create_like_path(alist), method: :POST, remote: true %><%= alist.likes.count %></td>
+          <td>
+            <%= link_to create_like_path(alist), class: "like-link", method: :POST, remote: true do%>
+              <i class="fas fa-sun like-btn"></i>
+            <% end %>
+            <%= alist.likes.count %>
+          </td>
         <% end %>
     </div>
   </tbody>
