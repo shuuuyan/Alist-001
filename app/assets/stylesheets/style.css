@@ -129,12 +129,23 @@ body{
   text-decoration: none;
   text-align: left;
   color: grey;
-  font-size: 10px;
+  font-size: 13px;
+}
+.card_btn{
+  display: flex;
 }
 .contributor{
   width: 100px;
   padding: 10px 0px;
   font-size: 10px;
+  justify-content: center;
+  text-align: right;
+}
+.like_btn{
+  width: 70%;
+   padding: 10px 0;
+  font-size: 5px;
+  justify-content: center;
   text-align: left;
 }
 .card__list {
@@ -315,6 +326,9 @@ body{
   background-color: white;
   list-style: none;
 }
+.comment__main{
+  display: inline-flex;
+}
 .comment__field{
   width: 100%;
   margin-bottom: 20px;
@@ -328,13 +342,8 @@ body{
   margin-left:3px;
   font-size: 0.7em;
   color: #fff;
-
   background: #5aa1f3;
   border: 1px #5aa1f3 solid;
-
-  background: #569ff3;
-  border: 1px #569ff3 solid;
-
   border-radius: 3px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   transition: 0.2s ease;
@@ -343,10 +352,7 @@ body{
   color: white;
   background-color: #2672c9;
 }
-.comment__btn:hover{
-  color: #fff;
-  background: #0b5cb8;
-}
+
 .comment_user{
   text-decoration: none;
   color: orange;                                    

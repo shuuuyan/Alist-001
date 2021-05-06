@@ -32,7 +32,7 @@
       <div class="alist__comments">
         <% if user_signed_in? %>
           <%= form_with model: [@alist,@comment], local: true do |f| %>
-          <div style="display:inline-flex">
+          <div class="comment__main">
             <div class="comment__field">
               <%= f.text_field :text, placeholder: "コメントする" %>
             </div>
@@ -40,6 +40,7 @@
               <%= f.submit "送信", class: :comment__btn %>
             </div>
           </div>
+          
           <% end %> 
         <% end %>
         <ul class="comments_lists">

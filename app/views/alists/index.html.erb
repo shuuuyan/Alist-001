@@ -1,15 +1,11 @@
 <main class="main">
   <div class="inner3">
     <div class="card__wrapper">
-
       <% @alists.each do |alist| %>
         <div class="card" id="alist_<%= alist.id %>">
           <%= render 'alist', alist: alist %>
         </div>
       <% end %>
-
     </div>
   </div>
 </main>
-
-    <%#= render partial: "alist", collection: @alists %>
