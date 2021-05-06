@@ -1,17 +1,15 @@
 <main class="main">
   <div class="inner3">
     <div class="card__wrapper">
-      <tbody>
 
-          <%= render partial: "alist", collection: @alists %>
+      <% @alists.each do |alist| %>
+        <div class="card" id="alist_<%= alist.id %>">
+          <%= render 'alist', alist: alist %>
+        </div>
+      <% end %>
 
-      </tbody>
     </div>
   </div>
 </main>
 
-<% @hoges.each do |hoge| %>
-  <%= render partial: 'hoge', hoge: hoge %>
-<% end %>
-
-<%= render partial: 'hoge', collection: @hoges %>
+    <%#= render partial: "alist", collection: @alists %>

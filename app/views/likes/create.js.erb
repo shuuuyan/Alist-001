@@ -1,1 +1,1 @@
-alert('いいねが押せている！');
+document.getElementById('alist_<%= @alist.id %>').innerHTML = '<%= j(render @alist) %>'
