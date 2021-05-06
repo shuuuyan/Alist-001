@@ -1,25 +1,41 @@
-<div class="card">
-  <div class="card__title">
-    <div class="card__title__text">
-      <%= alist.title %>
-    </div>
+<div class="card__title">
+  <div class="card__title__text">
+    <%= alist.title %>
+  </div>
+</div>
+<div class="card_btn">
+  <div class="like_btn">
+    <% if current_user.liked_by?(alist.id) %>
+        <%= link_to destroy_like_path(alist), class: "like-link", method: :DELETE, remote: true do %>
+          <i class="fas fa-sun unlike-btn"></i>
+        <% end %>
+        <%= alist.likes.count %>
+    <% else %>
+        <%= link_to create_like_path(alist), class: "like-link", method: :POST, remote: true do%>
+          <i class="fas fa-sun like-btn"></i>
+        <% end %>
+        <%= alist.likes.count %>
+    <% end %>
+      <%= link_to alist_path(alist.id), class: "like-link" do %>
+        <i class="far fa-comment like-btn"></i>
+      <% end %>
   </div>
   <div class="contributor">
-  投稿者 : <%= link_to alist.user.name, alist_path(alist.id), class: :card__user %>
+    <i class="far fa-user like-btn"></i>  <%= link_to alist.user.name, alist_path(alist.id), class: :card__user %>
   </div>
-  <div class="card__list">
-    <div class="card__list__text">
-      <%= alist.list1 %>
-    </div>
+</div>
+<div class="card__list">
+  <div class="card__list__text">
+    <%= alist.list1 %>
   </div>
-  <div class="card__list">
-    <div class="card__list__text">
-      <%= alist.list2 %> 
-    </div>
+</div>
+<div class="card__list">
+  <div class="card__list__text">
+    <%= alist.list2 %> 
   </div>
-  <div class="card__list">
-    <div class="card__list__text">
+</div>
+<div class="card__list">
+  <div class="card__list__text">
     <%= alist.list3 %> 
-    </div>
   </div>
 </div>

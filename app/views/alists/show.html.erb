@@ -5,11 +5,6 @@
 
       <div class="alist__field">
         <div class="alist__card">
-          <% if current_user.liked_by?(@alist.id) %>
-            <td><%= link_to 'いいねを外す', destroy_like_path(@alist), method: :DELETE %></td>
-          <% else %>
-            <td><%= link_to 'いいね', create_like_path(@alist), method: :POST %></td>
-          <% end %>
           <div class="alist__card__list">
             <div class="alist__card__text">
               <%= @alist.list1 %>
@@ -37,7 +32,7 @@
       <div class="alist__comments">
         <% if user_signed_in? %>
           <%= form_with model: [@alist,@comment], local: true do |f| %>
-          <div style="display:inline-flex">
+          <div class="comment__main">
             <div class="comment__field">
               <%= f.text_field :text, placeholder: "コメントする" %>
             </div>
@@ -45,6 +40,7 @@
               <%= f.submit "送信", class: :comment__btn %>
             </div>
           </div>
+          
           <% end %> 
         <% end %>
         <ul class="comments_lists">

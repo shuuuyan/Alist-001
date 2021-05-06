@@ -1,12 +1,18 @@
 <div class="main">
-  <div class="inner">
-    <div class="user__wrapper">
-      <div class="page-heading">
+  <div class="inner3">
+    <div class="page-heading">
         <%= "#{@user.name}さんの朝活ToDoリスト"%>
       </div>
-      <div class="card__wrapper">
+    <div class="card__wrapper">
+      <div class="card" >
         <%= render partial: "alists/alist", collection: @user.alists %> 
       </div>
     </div>
   </div>
 </div>
+
+<%# @alists.each do |alist| %>
+  <%# <div class="card" id="alist_<%= alist.id %>
+    <%#= render 'alist', alist: alist %>
+  <%# </div> %>
+<%# end %>
