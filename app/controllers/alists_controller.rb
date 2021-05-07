@@ -5,7 +5,7 @@ class AlistsController < ApplicationController
   before_action :contributor_confirmation, only: [:edit, :update, :destroy]
 
   def index
-    @alists = Alist.all
+    @alists = Alist.all.order(created_at: :desc)
   end
 
   def new
