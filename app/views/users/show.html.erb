@@ -2,11 +2,13 @@
   <div class="inner3">
     <div class="page-heading">
         <%= "#{@user.name}さんの朝活ToDoリスト"%>
-      </div>
+        <i class="far fa-check-square check-btn"></i>
+    </div>
     <div class="card__wrapper">
-      <div class="card" >
-        <%= render partial: "alists/alist", collection: @user.alists %> 
+      <div class="card">
+        <%= render partial: "alists/alist", collection: @user.alists%> 
       </div>
+    </div>
     </div>
   </div>
 </div>

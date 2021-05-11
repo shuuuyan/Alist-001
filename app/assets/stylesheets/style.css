@@ -181,6 +181,11 @@ body{
 .page-heading {
   font-size: 25px;
   text-align: center;
+  font-family: Century;
+}
+.check-btn {
+  size: 15px;
+  color: #808080;
 }
 
 .page-heading-text{
