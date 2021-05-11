@@ -1,7 +1,8 @@
 <main class="main">
   <div class="inner3">
     <div class="alist__wrapper">
-      <%#= link_to @alist.user.name, user_path(@alist.user), class: :alist__user %>
+      <%= link_to @alist.user.name, user_path(@alist.user), class: :alist__user %>
+
       <div class="alist__field">
         <div class="alist__card">
           <div class="alist__card__list">
@@ -21,32 +22,32 @@
           </div>
         </div>
       </div>
-        <% if current_user.id == @alist.user_id %>
+        <%# if current_user.id == @alist.user_id %>
           <div class="alist__manage">
             <%= link_to "編集する", edit_alist_path(@alist), class: :alist__btn %>
             <%= link_to "削除する", alist_path(@alist), method: :delete, class: :alist__btn %>
           </div>
-        <% end %>
+        <%# end %>
     </div>
       <div class="alist__comments">
         <% if user_signed_in? %>
           <%= form_with model: [@alist,@comment], local: true do |f| %>
-          <div class="comment__main">
-            <div class="comment__field">
-              <%= f.text_field :text, placeholder: "コメントする" %>
+            <div class="comment__main">
+              <div class="comment__field">
+                <%= f.text_field :text, placeholder: "コメントする" %>
+              </div>
+              <div class="comment__actions">
+                <%= f.submit "送信", class: :comment__btn %>
+              </div>
             </div>
-            <div class="comment__actions">
-              <%= f.submit "送信", class: :comment__btn %>
-            </div>
-          </div>
           
           <% end %> 
         <% end %>
         <ul class="comments_lists">
           <% @comments.each do |comment| %>
             <li class="comments_list">
+              <%= link_to "（#{comment.user.name}）", user_path(comment.user.id), class: :comment_user %>
               <%= comment.text %>
-              <%= link_to "（#{comment.user.name}）", user_path, class: :comment_user %>
             </li> 
           <% end %>
         </ul>
