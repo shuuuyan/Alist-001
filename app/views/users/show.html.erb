@@ -5,10 +5,11 @@
         <i class="far fa-check-square check-btn"></i>
     </div>
     <div class="card__wrapper">
-      <div class="card">
-        <%= render partial: "alists/alist", collection: @user.alists%> 
-      </div>
-    </div>
+      <% @user.alists.each do |alist| %>
+        <div class="card" id="alist_<%= alist.id %>">
+          <%= render 'alists/alist', alist: alist %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
@@ -18,3 +19,4 @@
     <%#= render 'alist', alist: alist %>
   <%# </div> %>
 <%# end %>
+
