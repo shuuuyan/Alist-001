@@ -21,7 +21,7 @@
       <% end %>
       <%= alist.comments.count %>
   </div>
-  <div class="contributor">
+  <div class="show_contributor">
     <%= link_to user_path(alist.user.id), class: "like-link" do %>
     <i class="far fa-user like-btn"></i>  
     <% end %>
@@ -30,16 +30,19 @@
 </div>
 <div class="card__list">
   <div class="card__list__text">
+    <i class="far fa-check-square list_check-btn"></i>
     <%= alist.list1 %>
   </div>
 </div>
 <div class="card__list">
   <div class="card__list__text">
+    <i class="far fa-check-square list_check-btn"></i>
     <%= alist.list2 %> 
   </div>
 </div>
 <div class="card__list">
   <div class="card__list__text">
+    <i class="far fa-check-square list_check-btn"></i>
     <%= alist.list3 %> 
   </div>
 </div>

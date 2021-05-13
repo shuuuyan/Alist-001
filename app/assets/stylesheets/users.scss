@@ -1,3 +1,14 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// ユーザー投稿一覧
+.user_card__wrapper{
+  width: 100%;
+  padding-left: 45px;
+  background-color: #D2E5FC;;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}

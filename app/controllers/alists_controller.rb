@@ -1,7 +1,7 @@
 class AlistsController < ApplicationController
 
   before_action :set_alist, except: [:index, :new, :create]
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!
   before_action :contributor_confirmation, only: [:edit, :update, :destroy]
 
   def index
@@ -44,26 +44,6 @@ class AlistsController < ApplicationController
       redirect_to root_path
     end
   end
-
-  def edit
-  end
-
-  def update
-    if @alist.update(alist_params)
-      redirect_to alist_path(@alist)
-    else
-      render :edit
-    end
-  end
-
-  def destroy
-    if @alist.destroy
-      redirect_to root_path
-    else
-      redirect_to root_path
-    end
-  end
-
 
   private
   

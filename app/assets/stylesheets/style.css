@@ -74,14 +74,14 @@ body{
   min-height: 100vh;
   background-size: cover;
   position: relative;
-  background-color: ghostwhite;
+  background-color: rgb(255, 247, 232);
   }
 
 .main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ghostwhite;
+  background-color: rgb(255, 247, 232);
 }
 .inner2 {
   width: 60%;
@@ -92,8 +92,6 @@ body{
   margin: 100px 0px 10px;
   background-color:white;
 }
-
-/* 投稿一覧 */
 .inner3 {
   width: 90%;
   display: flex;
@@ -101,11 +99,23 @@ body{
   align-items: center;
   padding: 20x 20px;
   margin: 20px 0px 20px;
-  background-color: ghostwhite;
+  background-color: #D2E5FC;
+}
+
+/* 投稿一覧 */
+.inner4 {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0px 20px 0px;
+  background-color: #D2E5FC;
 }
 
 .card__wrapper {
   width: 100%;
+  padding-left: 45px;
+  background-color: rgb(255, 247, 232);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -180,13 +190,18 @@ body{
 }
 
 .page-heading {
+  width: 100%;
   font-size: 25px;
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 10px 0;
+  background-color: #59A9F5;
   text-align: center;
   font-family: Century;
 }
 .check-btn {
   size: 15px;
-  color: #808080;
+  color: #fff;
 }
 
 .page-heading-text{
@@ -231,7 +246,7 @@ body{
   width: 100%;
   position: absolute;
   bottom: 0;
-  background-color: ghostwhite;
+  background-color: rgb(255, 247, 232);
   padding: 10px 0;
 }
 .copyright {
@@ -257,6 +272,13 @@ body{
   margin: 0 300px;
   background-color: rgb(230, 230, 230);
 }
+.show_contributor{
+  width: 100px;
+  padding: 10px 0px 10px 5px;
+  margin-bottom:  10px;
+  font-size: 10px;
+  justify-content: ;
+}
 .alist__card__list {
   width: 100%;
   display: block;
@@ -274,6 +296,9 @@ body{
   text-decoration: none;
   color: grey;
   font-size: 15px;
+}
+.list_check_btn{
+  color: grey;
 }
 .alist__hedding{
   font-size: 24px;
@@ -317,13 +342,11 @@ body{
 /* 詳細ページコメント */
 .alist__comments{
   width: 80%;
-  background-color: rgb(250, 244, 234);
+  background-color: #fff;
   padding: 20px;
   margin: 28px 0 40px 0;
 }
 .comments_lists{
-  border-radius: 10px;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0px 5px 5px 0px rgba(0, 0, 0, 0.12);
 }
 .comments_list{
   list-style-type: square;

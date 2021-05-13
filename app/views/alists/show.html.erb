@@ -1,33 +1,40 @@
 <main class="main">
   <div class="inner3">
     <div class="alist__wrapper">
-      <%= link_to @alist.user.name, user_path(@alist.user), class: :alist__user %>
-
       <div class="alist__field">
         <div class="alist__card">
+          <div class="show_contributor">
+            <%= link_to user_path(@alist.id), class: "like-link" do %>
+              <i class="far fa-user like-btn"></i>  
+            <% end %>
+              <%= link_to @alist.user.name, user_path(@alist.user), class: :card__user %>
+          </div>
           <div class="alist__card__list">
             <div class="alist__card__text">
+              <i class="far fa-check-square list_check-btn"></i>
               <%= @alist.list1 %>
             </div>
           </div>
           <div class="alist__card__list">
             <div class="alist__card__text">
+              <i class="far fa-check-square list_check-btn"></i>
               <%= @alist.list2 %> 
             </div>
           </div>
           <div class="alist__card__list">
             <div class="alist__card__text">
+              <i class="far fa-check-square list_check-btn"></i>
               <%= @alist.list3 %> 
             </div>
           </div>
         </div>
       </div>
-        <%# if current_user.id == @alist.user_id %>
+        <% if current_user.id == @alist.user_id %>
           <div class="alist__manage">
             <%= link_to "編集する", edit_alist_path(@alist), class: :alist__btn %>
             <%= link_to "削除する", alist_path(@alist), method: :delete, class: :alist__btn %>
           </div>
-        <%# end %>
+        <% end %>
     </div>
       <div class="alist__comments">
         <% if user_signed_in? %>
@@ -46,7 +53,7 @@
         <ul class="comments_lists">
           <% @comments.each do |comment| %>
             <li class="comments_list">
-              <%= link_to "（#{comment.user.name}）", user_path(comment.user.id), class: :comment_user %>
+              <%= link_to "[#{comment.user.name}]", user_path(comment.user.id), class: :comment_user %>
               <%= comment.text %>
             </li> 
           <% end %>
