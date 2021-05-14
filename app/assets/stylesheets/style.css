@@ -98,7 +98,7 @@ body{
   flex-direction: column;
   align-items: center;
   padding: 20x 20px;
-  margin: 20px 0px 20px;
+  margin: 80px 0 20px;
   background-color: #D2E5FC;
 }
 
@@ -269,15 +269,26 @@ body{
 .alist__card {
   width: 100%;
   padding: 20px 30px 70px;
-  margin: 0 300px;
+  margin: 0 400px;
   background-color: rgb(230, 230, 230);
+}
+.alist__card__title{
+  width: 100%;
+  font-weight: bold;
+}
+.alist__card__title__text{
+  width: 100%;
+  padding: 10px 0px;
+  text-decoration: none;
+  text-align: left;
+  color: grey;
+  font-size: 20px;
 }
 .show_contributor{
   width: 100px;
   padding: 10px 0px 10px 5px;
   margin-bottom:  10px;
   font-size: 10px;
-  justify-content: ;
 }
 .alist__card__list {
   width: 100%;
@@ -347,10 +358,11 @@ body{
   margin: 28px 0 40px 0;
 }
 .comments_lists{
+  width: 100%;
 }
 .comments_list{
   list-style-type: square;
-  padding: 0 5px;
+  padding: 0px 5px 5px 5px;
   background-color: white;
   list-style: none;
 }
@@ -383,7 +395,7 @@ body{
 
 .comment_user{
   text-decoration: none;
-  color: orange;                                    
+  color: grey;                                    
 }
 
 /* いいね */
