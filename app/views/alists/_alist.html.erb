@@ -21,9 +21,9 @@
       <% end %>
       <%= alist.comments.count %>
   </div>
-  <div class="show_contributor">
-    <%= link_to user_path(alist.user.id), class: "like-link" do %>
-    <i class="far fa-user like-btn"></i>  
+  <div class="contributor">
+    <%= link_to user_path(alist.user.id), class: "user-link" do %>
+    <i class="far fa-user user-btn"></i>  
     <% end %>
     <%= link_to alist.user.name, user_path(alist.user.id), class: :card__user %>
   </div>
