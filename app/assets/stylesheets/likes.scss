@@ -11,12 +11,23 @@
   background-color: rgb(230, 230, 230)!important;
 }
 
+.material-icons.md-18 { 
+  font-size: 16px; 
+}
+
 .like-btn {
-  font-size: 15px;
   color: #808080;
 }
  
 .unlike-btn {
-  font-size: 15px;
+  font-size: 10px;
+  color: orange;
+}
+
+.comment-btn {
+  font-size: 18px;
+  color: #808080;
+}
+.comment-btn:hover {
   color: orange;
 }
