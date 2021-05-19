@@ -7,12 +7,14 @@
   <div class="like_btn">
     <% if current_user.liked_by?(alist.id) %>
         <%= link_to destroy_like_path(alist), class: "like-link", method: :DELETE, remote: true do %>
-          <i class="fas fa-sun unlike-btn"></i>
+          <%# <i class="fas fa-sun unlike-btn"></i> %>
+          <i class="material-icons md-18 unlike-btn">wb_sunny</i>
         <% end %>
           <%= alist.likes.count %>
     <% else %>
         <%= link_to create_like_path(alist), class: "like-link", method: :POST, remote: true do%>
-          <i class="fas fa-sun like-btn"></i>
+          <%# <i class="fas fa-sun like-btn"></i>  %>
+          <i class="material-icons md-18 like-btn">wb_sunny</i>
         <% end %>
           <%= alist.likes.count %>
     <% end %>

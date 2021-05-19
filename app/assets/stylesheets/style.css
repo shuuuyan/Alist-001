@@ -152,9 +152,9 @@ body{
   text-align: right;
 }
 .like_btn{
-  width: 70%;
+  width: 100%;
   padding: 10px 0;
-  font-size: 5px;
+  font-size: 13px;
   color: #808080;
   justify-content: center;
   text-align: left;
@@ -172,8 +172,8 @@ body{
 }
 .card__list__text{
   width: 100%;
-  padding: 10px 0px;
-  text-align: center;
+  padding: 10px 0 10px 15px;
+  text-align: left;
   text-decoration: none;
   color: grey;
   font-size: 10px;
