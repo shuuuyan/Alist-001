@@ -333,8 +333,8 @@ body{
 }
 .alist__card__text{
   width: 100%;
-  padding: 15px 0;
-  text-align: center;
+  padding: 15px 0 15px 20px;
+  text-align: left;
   text-decoration: none;
   color: grey;
   font-size: 15px;
