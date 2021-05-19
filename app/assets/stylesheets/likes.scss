@@ -8,26 +8,34 @@
 }
 
 .like-link:hover {
-  background-color: rgb(230, 230, 230)!important;
+  // background-color: rgb(230, 230, 230)!important;
+  /* #ビュー維持の記述 */
 }
 
 .material-icons.md-18 { 
-  font-size: 16px; 
+  font-size: 18px; 
+  padding-right: 5px;
 }
 
 .like-btn {
-  color: #808080;
+  color: rgb(236, 218, 201);
+  // color: #fff;
 }
  
 .unlike-btn {
   font-size: 10px;
-  color: orange;
+  padding-right: 5px;
+  background: -webkit-linear-gradient(0deg, #fd9400, #ffa63a, #f1dcc1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .comment-btn {
-  font-size: 18px;
-  color: #808080;
+  padding: 0 5px 0 8px;
+  font-size: 15px;
+  color: #aae3ff;
 }
+
 .comment-btn:hover {
-  color: orange;
+  color: #00eeff;
 }

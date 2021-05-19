@@ -1,5 +1,5 @@
 <main class="main">
-  <div class="inner3">
+  <div class="inner5">
     <div class="alist__wrapper">
       <div class="alist__field">
         <div class="alist__card">
@@ -16,19 +16,19 @@
           </div>
           <div class="alist__card__list">
             <div class="alist__card__text">
-              <i class="far fa-check-square list_check-btn"></i>
+              <i class="fas fa-check-square list_check-btn"></i>
               <%= @alist.list1 %>
             </div>
           </div>
           <div class="alist__card__list">
             <div class="alist__card__text">
-              <i class="far fa-check-square list_check-btn"></i>
+              <i class="fas fa-check-square list_check-btn"></i>
               <%= @alist.list2 %> 
             </div>
           </div>
           <div class="alist__card__list">
             <div class="alist__card__text">
-              <i class="far fa-check-square list_check-btn"></i>
+              <i class="fas fa-check-square list_check-btn"></i>
               <%= @alist.list3 %> 
             </div>
           </div>
@@ -52,13 +52,13 @@
                 <%= f.submit "送信", class: :comment__btn %>
               </div>
             </div>
-          
           <% end %> 
         <% end %>
         <ul class="comments_lists">
           <% @comments.each do |comment| %>
             <li class="comments_list">
-              <%= link_to "[#{comment.user.name}] : ", user_path(comment.user.id), class: :comment_user %>
+              <i class="fas fa-user comment-user-btn"></i>  
+              <%= link_to "#{@alist.user.name} : ", user_path(@alist.user.id), class: :card__user %>
               <%= comment.text %>
             </li> 
           <% end %>

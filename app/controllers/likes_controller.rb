@@ -1,5 +1,6 @@
 class LikesController < ApplicationController
   before_action :like_params
+  
   def create
     Like.create(user_id: current_user.id, alist_id: params[:id])
   end
