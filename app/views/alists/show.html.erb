@@ -58,7 +58,7 @@
           <% @comments.each do |comment| %>
             <li class="comments_list">
               <i class="fas fa-user comment-user-btn"></i>  
-              <%= link_to "#{comment.user.name} : ", user_path(@alist.user.id), class: :card__user %>
+              <%= link_to "#{comment.user.name} : ", user_path(comment.user.id), class: :card__user %>
               <%= comment.text %>
             </li> 
           <% end %>
