@@ -9,7 +9,7 @@
             </div>
           </div>
           <div class="show_contributor">
-            <%= link_to user_path(@alist.id), class: "user-link" do %>
+            <%= link_to user_path(@alist.user), class: "user-link" do %>
               <i class="far fa-user user-btn"></i>  
             <% end %>
               <%= link_to @alist.user.name, user_path(@alist.user), class: :card__user %>
