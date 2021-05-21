@@ -1,5 +1,5 @@
 # Alist
-![image](https://gyazo.com/5bc9edca1a43bac0c97c3fe46bff79fa)
+<img width="1434" alt="Alistトップページ" src="https://user-images.githubusercontent.com/78298470/119109311-06df7f00-ba5c-11eb-8de6-860301f08cf8.png">
 
 # アプリ概要
 朝活を始めたい・継続したい人に向けた
