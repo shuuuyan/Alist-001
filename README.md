@@ -1,4 +1,4 @@
-# アプリ名 : Alist
+# アプリ名:Alist
 <img width="1434" alt="Alistトップページ" src="https://user-images.githubusercontent.com/78298470/119109311-06df7f00-ba5c-11eb-8de6-860301f08cf8.png">
 
 # アプリ概要
@@ -24,8 +24,7 @@
 				
 # 基本機能
 ## 新規登録画面
-https://user-images.githubusercontent.com/78298470/119112695-52475c80-ba5f-11eb-9bfb-d3c72786d350.mp4
-
+![Animated GIF-downsized](https://user-images.githubusercontent.com/78298470/119117217-fa5f2480-ba63-11eb-9d2b-4a958d1315ef.gif)
 
 ## ログイン画面
 ![image](https://user-images.githubusercontent.com/78298470/112436664-53bf1600-8d89-11eb-93b1-04322ad6d2c9.png)
