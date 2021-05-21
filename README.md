@@ -29,6 +29,8 @@
 
 <img src="https://user-images.githubusercontent.com/78298470/119117217-fa5f2480-ba63-11eb-9d2b-4a958d1315ef.gif" width="100%">
 
+![Image from Gyazo](https://gyazo.com/54b1828588aa07f0a72607ec390c4312.gif)
+
 ## ログイン画面
 ![image](https://user-images.githubusercontent.com/78298470/112436664-53bf1600-8d89-11eb-93b1-04322ad6d2c9.png)
 
