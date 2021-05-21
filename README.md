@@ -27,9 +27,8 @@
 ![Animated GIF-downsized](https://user-images.githubusercontent.com/78298470/119117217-fa5f2480-ba63-11eb-9d2b-4a958d1315ef.gif)
 
 
-<img src="https://user-images.githubusercontent.com/78298470/119117217-fa5f2480-ba63-11eb-9d2b-4a958d1315ef.gif" width="100px">
+<img src="https://user-images.githubusercontent.com/78298470/119117217-fa5f2480-ba63-11eb-9d2b-4a958d1315ef.gif" width="100%">
 
-<img src="***画像のURL***" width="***サイズ***">
 ## ログイン画面
 ![image](https://user-images.githubusercontent.com/78298470/112436664-53bf1600-8d89-11eb-93b1-04322ad6d2c9.png)
 
