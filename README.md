@@ -7,8 +7,8 @@
 
 # 制作背景
 コロナ禍で自分の人生や日々の習慣を振り返る人々が多くなりました。その中でも朝の時間を有効活用し、運動や勉強をする人が増えました。しかし、朝活することを決意しても継続できなかったり、何から始めれば良いのか分からない人が多いと思います。
-そんな朝活を始める人や継続したい人に向けた、朝活をする人のToDoリストが見れる記録・共有アプリケーションがあれば、朝活を始める人や継続できる人が増えると思いました。
-以下のデータをもとに朝活に対する需要があると思いましたので制作することを決めました。
+そんな朝活を始める人や継続したい人に向けて、朝活をする人のToDoリストが見れる記録・共有アプリケーションを作成することで、朝活を始める人や継続できる人が増えると考えました。
+以下のデータをもとに朝活に対する需要があると確信したため、制作することを決めました。
 
 ## SNS国内データ
 (2021年３月総務省統計データ)
@@ -24,18 +24,13 @@
 				
 # 基本機能
 ## 新規登録画面
-![Animated GIF-downsized](https://user-images.githubusercontent.com/78298470/119117217-fa5f2480-ba63-11eb-9d2b-4a958d1315ef.gif)
-
-
-<img src="https://user-images.githubusercontent.com/78298470/119117217-fa5f2480-ba63-11eb-9d2b-4a958d1315ef.gif" width="100%">
-
 ![Image from Gyazo](https://gyazo.com/54b1828588aa07f0a72607ec390c4312.gif)
 
 ## ログイン画面
-![image](https://user-images.githubusercontent.com/78298470/112436664-53bf1600-8d89-11eb-93b1-04322ad6d2c9.png)
+![image from Gyazo](https://gyazo.com/5f2ba242ca408e4e7195416281f8d10a.gif)
 
 ## 投稿画面
-![image](https://user-images.githubusercontent.com/78298470/112436786-7f420080-8d89-11eb-90d5-6b2e9c17a0de.png)
+![image from Gyazo](https://gyazo.com/ae4214dfe0e51b01b3a236a28dee48a5.gif)
 
 ## 投稿一覧ページ
 ![image](https://user-images.githubusercontent.com/78298470/112436786-7f420080-8d89-11eb-90d5-6b2e9c17a0de.png)
