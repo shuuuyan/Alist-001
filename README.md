@@ -1,5 +1,5 @@
 # アプリ名:Alist
-<img width="1434" alt="Alistトップページ" src="https://user-images.githubusercontent.com/78298470/119109311-06df7f00-ba5c-11eb-8de6-860301f08cf8.png">
+![image](https://user-images.githubusercontent.com/78298470/119295942-02e97200-bc93-11eb-9c9a-7aca9cd76bfe.png)
 
 # アプリ概要
 朝活を始めたい・継続したい人に向けた
@@ -22,7 +22,7 @@
 - 朝活はした方が良いか？ → はい(83%) / しなくても良い(17%)
 - →およそ62％の人に需要あり (約360万人)
 				
-# 基本機能
+# アプリ基本機能
 ## 新規登録画面
 ![Image from Gyazo](https://gyazo.com/54b1828588aa07f0a72607ec390c4312.gif)
 
