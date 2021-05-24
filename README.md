@@ -41,10 +41,11 @@
 ## ユーザーリスト
 ![image from Gyazo](https://gyazo.com/d0ee165c10b588dce1f0faf837190bb9.gif)
 
-## 編集画面
+## 編集機能
 ![image from Gyazo](https://gyazo.com/3dc087d52e703c2344a624c5e4021527.gif)
 
-## 削除画面
+## 削除機能
+![image from Gyazo](https://gyazo.com/c64b4c3b5c99a3d98fdeb5c171b03812.gif)
 				
 
 # テーブル設計
