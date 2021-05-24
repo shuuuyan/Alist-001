@@ -32,27 +32,18 @@
 ## 投稿画面
 ![image from Gyazo](https://gyazo.com/ae4214dfe0e51b01b3a236a28dee48a5.gif)
 
-## 投稿一覧ページ
-![image](https://user-images.githubusercontent.com/78298470/112436786-7f420080-8d89-11eb-90d5-6b2e9c17a0de.png)
+## いいね機能
+![image from Gyazo](https://gyazo.com/845027fb2a00d69a51fc782a3d135a4a.gif)
 
-## 投稿詳細ページ
+## コメント機能
+![image from Gyazo](https://gyazo.com/1c7a318ecd50eed99eb6c002e3f71ed9.gif)
+
+## ユーザーリスト
 
 ## 編集画面
 
 ## 削除画面
-
-## コメント画面
-
-## いいね機能
-
-					
-# 実装予定の内容	
-- ・投稿一覧画面
-- ・投稿編集・削除機能画面
-- ・マイページ画面
-- ・マイページ編集画面
-- ・コメント機能
-- ・いいね機能
+				
 
 # テーブル設計
 
