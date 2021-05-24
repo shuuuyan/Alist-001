@@ -39,8 +39,10 @@
 ![image from Gyazo](https://gyazo.com/1c7a318ecd50eed99eb6c002e3f71ed9.gif)
 
 ## ユーザーリスト
+![image from Gyazo](https://gyazo.com/d0ee165c10b588dce1f0faf837190bb9.gif)
 
 ## 編集画面
+![image from Gyazo](https://gyazo.com/3dc087d52e703c2344a624c5e4021527.gif)
 
 ## 削除画面
 				
