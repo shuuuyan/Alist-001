@@ -8,9 +8,9 @@
 # 本番環境
 　https://alist-001.herokuapp.com/
  ## ID/Pass
-ID: 
+ID : asakatsu
 
-Pass: 
+Pass : 10101
 
  ## テスト用アカウント
  メールアドレス : test@111
