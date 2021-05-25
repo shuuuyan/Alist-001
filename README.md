@@ -37,10 +37,26 @@ Pass : 10101
 # アプリ基本機能
 ## 新規登録画面
 ![Image from Gyazo](https://gyazo.com/54b1828588aa07f0a72607ec390c4312.gif)
-ボタn
- ・Github
- 
- ・Heroku
+
+# 使用技術(開発環境)
+
+## バックエンド
+Ruby,Ruby on Rails
+
+## フロントエンド
+JavaScript
+
+## データベース
+MySQL
+
+## インフラ
+Heroku
+
+## ソース管理
+GitHub,GitHub Desktop
+
+## エディタ
+VSCode
  
 # 工夫したポイント
 
@@ -66,6 +82,8 @@ Pass : 10101
 ・テストコードの実装
 
 ・マイページの実装
+
+・通知機能の実装
 
 # DB設計
 
