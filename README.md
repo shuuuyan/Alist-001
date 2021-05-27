@@ -13,7 +13,7 @@ ID : asakatsu
 Pass : 10101
 
  ## テスト用アカウント
- メールアドレス : guest@test.com
+ メールアドレス : guest@guest.com
  
  パスワード : 111qqq
  
