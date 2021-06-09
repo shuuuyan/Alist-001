@@ -49,6 +49,27 @@ Pass : 10101
 ## 新規登録画面
 ![Image from Gyazo](https://gyazo.com/54b1828588aa07f0a72607ec390c4312.gif)
 
+## ログイン画面
+![image from Gyazo](https://gyazo.com/5f2ba242ca408e4e7195416281f8d10a.gif)
+
+## 投稿画面
+![image from Gyazo](https://gyazo.com/ae4214dfe0e51b01b3a236a28dee48a5.gif)
+
+## いいね機能
+![image from Gyazo](https://gyazo.com/845027fb2a00d69a51fc782a3d135a4a.gif)
+
+## コメント機能
+![image from Gyazo](https://gyazo.com/1c7a318ecd50eed99eb6c002e3f71ed9.gif)
+
+## ユーザーリスト
+![image from Gyazo](https://gyazo.com/d0ee165c10b588dce1f0faf837190bb9.gif)
+
+## 編集機能
+![image from Gyazo](https://gyazo.com/3dc087d52e703c2344a624c5e4021527.gif)
+
+## 削除機能
+![image from Gyazo](https://gyazo.com/c64b4c3b5c99a3d98fdeb5c171b03812.gif)
+
 # 使用技術(開発環境)
 
 ## バックエンド
